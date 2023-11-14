@@ -52,7 +52,7 @@
                   <div class="card relative z-2 surface-0 shadow-2 p-3 border-round-lg align-items-center justify-content-center">
                     <div class="text-2xl flex">Description</div>
                     <divider-view/>
-                    <div class="align-left">ARCTIC validators work on our own servers in a reliable data center. We are support decentralization.</div>
+                    <div class="text-left">ARCTIC validators work on our own servers in a reliable data center. We support decentralization.</div>
                   </div>
                 </div>
                 <div class="col-12">
