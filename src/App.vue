@@ -4,7 +4,7 @@
     <div class="grid" style="max-width: 1000px">
       <div class="col-12">
         <div class="card elative flex z-2 surface-0 shadow-2 p-3 border-round-lg align-items-center justify-content-center">
-          <img :src="'arctic.svg'" height="100" class="mr-2"/>
+          <img :src="'arctic.svg'" height="100" class="mr-2" @click="show = !show"/>
           <div class="card">
             <div class="text-6xl">Arctic</div>
             <div class="text-2xl">Validator</div>
@@ -93,6 +93,39 @@
           </card-view>
         </div>
       </div>
+      <div class="col-12" v-show="show">
+        <div class="card relative w-full flex z-2 surface-0 shadow-2 p-3 border-round-lg align-items-center justify-content-center">
+          <card-view class="w-full">
+            <template #title>Monitoring</template>
+            <template #content>
+              <div class="grid">
+                <div class="col-12">
+                  <div class="card relative z-2 surface-0 shadow-2 p-3 border-round-lg align-items-center justify-content-center">
+                    <div class="flex flex-row flex-wrap gap-3">
+                      <div class="flex align-items-center justify-content-center">
+                        <a href="http://185.103.132.4:8888/" target="_blank" rel="noopener noreferrer">
+                          <button-click icon="pi pi-bell" class="bg-blue-500" rounded aria-label="Search" />
+                        </a>
+                      </div>
+                      <div class="flex align-items-center justify-content-center">Monitoring tender duty</div>                      
+                    </div>
+                  </div>
+                  <div class="card relative z-2 surface-0 shadow-2 p-3 border-round-lg align-items-center justify-content-center">
+                    <div class="flex flex-row flex-wrap gap-3">
+                      <div class="flex align-items-center justify-content-center">
+                        <a href="http://185.103.132.4:3000/" target="_blank" rel="noopener noreferrer">
+                          <button-click icon="pi pi-bell" class="bg-red-500" rounded aria-label="Search" />
+                        </a>
+                      </div>
+                      <div class="flex align-items-center justify-content-center">Monitoring Grafana</div>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </card-view>
+        </div>
+      </div>
       <div class="col-12">
         <div class="card relative flex z-2 surface-0 shadow-2 p-3 border-round-lg">
           <a href="https://github.com/Arctic-Validator" target="_blank" rel="noopener noreferrer">
@@ -108,6 +141,11 @@
 
 
 export default {
+  data: function(){
+      return{
+          show: false
+      }
+  }
 }
 </script>
 
