@@ -4,7 +4,7 @@
     <div class="grid" style="max-width: 1000px">
       <div class="col-12">
         <div class="card elative flex z-2 surface-0 shadow-2 p-3 border-round-lg align-items-center justify-content-center">
-          <img :src="'arctic.png'" height="100" class="mr-2"/>
+          <img :src="'arctic.svg'" height="100" class="mr-2"/>
           <div class="card">
             <div class="text-6xl">Arctic</div>
             <div class="text-2xl">Validator</div>
