@@ -70,7 +70,29 @@
           </card-view>
         </div>
       </div>
-      
+      <div class="col-12">
+        <div class="card relative w-full flex z-2 surface-0 shadow-2 p-3 border-round-lg align-items-center justify-content-center">
+          <card-view class="w-full">
+            <template #title>Utils</template>
+            <template #content>
+              <div class="grid">
+                <div class="col-12">
+                  <div class="card relative z-2 surface-0 shadow-2 p-3 border-round-lg align-items-center justify-content-center">
+                    <div class="flex flex-row flex-wrap gap-3">
+                      <div class="flex align-items-center justify-content-center">
+                        <a href="https://explorer.arctics.wtf/" target="_blank" rel="noopener noreferrer">
+                          <button-click icon="pi pi-search" class="bg-orange-500" rounded aria-label="Search" />
+                        </a>
+                      </div>
+                      <div class="flex align-items-center justify-content-center">Explorer for supported networks in Cosmos</div>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </template>
+          </card-view>
+        </div>
+      </div>
       <div class="col-12">
         <div class="card relative flex z-2 surface-0 shadow-2 p-3 border-round-lg">
           <a href="https://github.com/Arctic-Validator" target="_blank" rel="noopener noreferrer">
